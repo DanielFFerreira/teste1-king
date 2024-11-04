@@ -1,0 +1,1 @@
+function handleButtonClick(){showAlert(prompt("Digite seu nome: "))}function showAlert(e){e?Swal.fire({title:"Olá",text:`Bem-vindo, ${e}!`,icon:"success"}):Swal.fire({title:"Erro",text:"Você não inseriu um nome",icon:"error"})}document.addEventListener("DOMContentLoaded",function(){document.getElementById("btnName").addEventListener("click",handleButtonClick)});
