@@ -1,0 +1,29 @@
+@import './base';
+@import './variables';
+@import './mixins';
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  @include flexbox-center;
+  background-color: $gray94;
+}
+
+// Botão
+#btnName {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: $blueDodger;
+  border: none; //Remove a borda padrão
+  color: $white;//Tudo com cor de branco
+  cursor: pointer;//Cursor de ponteiro ao passar o mouse
+  border-radius: 5px; //Bordas arredondadas
+  transition: background-color 0.3s; //Transição suave para houver
+
+  &:hover {
+    background-color: $blueDodgerHouver; //Azul mais escuro ao passar o mouse
+  }
+
+}
+
